@@ -3,13 +3,16 @@ title: "Introduction"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "What is an interactive map?"
+- "Why using Jupyter notebook for creating interactive maps?"
+- "How to create our first interactive map in the jupyter notebook?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Understand what is an interactive map"
+- "Learn how to use the Jupyter notebook to create an interactive map"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "JupyterLab"
+- "ipyleaflet for creating interactive maps"
 ---
-FIXME
 
 {% include links.md %}
 
