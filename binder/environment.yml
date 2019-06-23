@@ -1,0 +1,25 @@
+name: jupyter-maps
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - python=3.6
+  - numpy >=1.14
+  - ipyleaflet>=0.10.2
+  - rasterio
+  - tqdm
+  - requests
+  - pillow
+  - matplotlib
+  - branca
+  - geopandas
+  - netcdf4
+  - scipy
+  - scikit-image
+  - nbdime
+  - nbconvert
+  - pip:
+      - jupyterlab-git
