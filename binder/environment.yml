@@ -21,5 +21,8 @@ dependencies:
   - scikit-image
   - nbdime
   - nbconvert
+  - cdsapi
+  - rasterstats
   - pip:
       - jupyterlab-git
+      - geojsoncontour
