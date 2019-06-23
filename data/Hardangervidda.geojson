@@ -1,0 +1,83 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.485141, 60.571146]
+      },
+      "properties": {
+        "name": "Sensor-1",
+        "description": "Appelsinhytta",
+        "country.etc": "NO",
+        "waspmote_id": "023D67057C105474"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.490383, 60.581501]
+      },
+      "properties": {
+        "name": "Sensor-2",
+        "description": "Hills",
+        "country.etc": "NO",
+        "waspmote_id": "1F566F057C105487"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.502778, 60.576852]
+      },
+      "properties": {
+        "name": "Sensor-3",
+        "description": "Middaselvi discharge",
+        "country.etc": "NO",
+        "waspmote_id": "3F7C67057C105419"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.503957, 60.616694]
+      },
+      "properties": {
+        "name": "Sensor-4",
+        "description": "Finselvi discharge",
+        "country.etc": "NO",
+        "waspmote_id": "40516F057C105437"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.490383, 60.581501]
+      },
+      "properties": {
+        "name": "Sensor-5",
+        "description": "Hills",
+        "country.etc": "NO",
+        "waspmote_id": "667767057C10548E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.528482, 60.593514]
+      },
+      "properties": {
+        "name": "Sensor-6",
+        "description": "Drift lower lidar",
+        "country.etc": "NO",
+        "waspmote_id": "6D4467057C1054DC"
+      }
+    }
+  ]
+}
