@@ -230,8 +230,61 @@ the layers you draw and the layer order.
 
 ## Adding/removing a layer to `ipyleaflet` map
 
-Adding or removing layers with `ipyleaflet` is done using `add_layer` or `remove_layer`.
+Adding or removing layers with `ipyleaflet` is done using `add_layer` or `remove_layer`. A layer is added or 
+removed from an existing `ipyleaflet` map, and to be able to do so, we store our map into a variable:
+
+~~~
+map = Map(center = (53.48, -2.24), basemap=basemaps.Esri.WorldImagery)
+~~~
+{: .language-python}
+
+And then the map does not appear in our notebook. For this, you need to explicitly show it:
+~~~
+map
+~~~
+{: .language-python}
+
+### Adding a tile layer to an existing map
+
+Let's add an image from [NASA Global Imagery Browse Service (GIBS)](https://earthdata.nasa.gov/eosdis/science-system-description/eosdis-components/gibs):
+
+~~~
+from ipyleaflet import basemap_to_tiles
+
+nasa_layer = basemap_to_tiles(basemaps.NASAGIBS.ModisTerraTrueColorCR, "2019-06-24");
+map.add_layer(nasa_layer);
+~~~
+{: .language-python}
+
+
+<iframe width="800" height="400" src="../files/simple_map_NASAGIBS.ModisTerraTrueColorCR_20190623.html" frameborder="0" allowfullscreen></iframe>
+
+As you can see the new layer is on top of the original map, thus hiding the original basemap.
+
+To remove a layer:
+~~~
+map.remove_layer(nasa_layer)
+~~~
+{: .language-python}
+
+To be able to control (remmove or change its specification), it is important to store it in a variable (here 
+*nasa_layer*).
+
+
 ## Adding layer control
+
+As we are adding or removing layers from Python interface, it would be nice to have the same functionality from
+the map itself:
+
+~~~
+map.add_control(LayersControl())
+
+~~~
+{: .language-python}
+
+<iframe width="800" height="400" src="../files/simple_map_NASAGIBS.ModisTerraTrueColorCR_20190623_control.html" frameborder="0" allowfullscreen></iframe>
+
+On the top right of our map, we now have the possibility to add/remove our layers.
 
 {% include links.md %}
 
