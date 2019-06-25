@@ -36,6 +36,7 @@ from ipyleaflet import basemap_to_tiles
 
 nasa_layer = basemap_to_tiles(basemaps.NASAGIBS.ModisTerraTrueColorCR, "2019-06-24");
 map.add_layer(nasa_layer);
+map
 ~~~
 {: .language-python}
 
@@ -60,6 +61,7 @@ As we are adding or removing layers from Python interface, it would be nice to h
 the map itself:
 
 ~~~
+from ipyleaflet import LayersControl
 map.add_control(LayersControl())
 
 ~~~
