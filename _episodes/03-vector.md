@@ -809,7 +809,7 @@ for i in range(len(features)):
 
 ## Choropleth maps
 
-
+A choropleth map is a type of thematic map in which areas (in our example the areas will be countries) are displayed with different colors, shades or patterns which are defined as a function of the plotted parameter. This parameter can be for instance the population density or any statistical quantity, and in our case the color will depend on the temperature. 
 
 ~~~
 from rasterstats import zonal_stats
@@ -818,7 +818,7 @@ import pandas as pd
 import json
 
 country_file = gpd.datasets.get_path('naturalearth_lowres')
-zs=zonal_stats(country_file, "../data/t2m_ERA5_25122018_shift_C.nc", stats="mean")
+zs=zonal_stats(country_file, "data/t2m_ERA5_25122018_shift_C.nc", stats="mean")
 df_zonal_stats = pd.DataFrame(zs)
 
 countries = gpd.read_file(country_file)
@@ -1069,8 +1069,8 @@ t2m
 
 
 ~~~
-ddf.to_file("../data/output.json", driver="GeoJSON")
-geojson_data = json.load(open("../data/output.json",'r'))
+ddf.to_file("data/output.json", driver="GeoJSON")
+geojson_data = json.load(open("data/output.json",'r'))
 ~~~
 {: .language-python}
 
