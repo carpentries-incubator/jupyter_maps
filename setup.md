@@ -20,36 +20,40 @@ that comes with everything we need for the lesson.
 
 ### Obtain lesson materials
 
-1. Download [data_jupyter_publish_CarpentryConnect2019.zip](https://zenodo.org/record/3255070/files/data_jupyter_publish_CarpentryConnect2019.tar?download=1).
-2. Create a folder called `cc-jupyter-maps` on your Desktop.
-3. Move downloaded files into this newly created folder.
+Follow the steps below. We also give corresponding command lines if you wish to run them from the Terminal:
+
+1. Create a folder called `cc-jupyter-maps`.
+
+~~~
+mkdir cc-jupyter-maps
+~~~
+{: .language-python}
+
+2. Change directory to `cc-jupyter-maps` folder.
+
+~~~
+cd cc-jupyter-maps
+~~~
+{: .language-python}
+
+3. Download [data_jupyter_publish_CarpentryConnect2019.zip](https://zenodo.org/record/3255070/files/data_jupyter_publish_CarpentryConnect2019.tar?download=1).
+
+~~~
+curl https://zenodo.org/record/3255070/files/data_jupyter_publish_CarpentryConnect2019.tar?download=1 -o data.tar
+~~~
+{: .language-python}
+
 4. Unzip the files.
+
+~~~
+tar xvf data.tar
+~~~
+{: .language-python}
 
 You should now see one new folder called `data` in your `cc-jupyter-maps` directory on your
 Desktop.
 
 &nbsp; <!-- vertical spacer -->
-
-### Navigate to the `data` folder
-
-If you're using a Unix shell application, such as Terminal app in macOS, Console or Terminal in
-Linux, or [Git Bash](https://gitforwindows.org/) on Windows, execute the following command:
-
-~~~
-$ cd ~/Desktop/cc-jupyter-maps/data
-~~~
-{: .source}
-
-On Windows, you can use its native Command Prompt program.  The easiest way to start it up is by
-pressing <kbd>Windows Logo Key</kbd>+<kbd>R</kbd>, entering `cmd`, and hitting <kbd>Enter</kbd>. In
-the Command Prompt, use the following command to navigate to the `data` folder:
-~~~
-$ cd /D %userprofile%\Desktop\cc-jupyter-maps\data
-~~~
-{: .source}
-
-&nbsp; <!-- vertical spacer -->
-
 
 ### Create new conda environment and install Additional python packages
 

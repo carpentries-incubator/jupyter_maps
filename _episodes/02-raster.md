@@ -121,7 +121,7 @@ daily data for 25th December 2018 at 12 UTC.
 > >          'grid': "2.5/2.5",
 > >         'format':'netcdf'
 > >     },
-> >     'UV_ERA5_20181224_1200.nc')
+> >     'uv_ERA5_20181224_1200.nc')
 > > 
 > > ~~~
 > > {: .language-python}
@@ -146,15 +146,7 @@ The main advantage of this fairly standard data format is that we can use `xarra
 
 ## Get Wind data for this episode
 
-- Download [uv_ERA5_25122018_small.nc](https://github.com/annefou/jupyter_maps/raw/master/data/uv_ERA5_25122018_small.nc).
-
-And make sure the file is your local directory. In you are using a jupyterhub instance provided by
-your instructor, you can use the following command from a JupyterHub terminal:
-
-~~~
-wget https://github.com/annefou/jupyter_maps/raw/master/data/uv_ERA5_25122018_small.nc
-~~~
-{: .language-bash}
+And make sure the file [uv_ERA5_25122018_small.nc](https://github.com/annefou/jupyter_maps/raw/master/data/uv_ERA5_25122018_small.nc) is in the data folder. 
 
 ~~~
 from ipyleaflet import Map, basemaps, Velocity
@@ -162,7 +154,7 @@ import xarray as xr
 
 # Open Dataset containing U and V wind components
 
-ds = xr.open_dataset('uv_ERA5_25122018_small.nc')
+ds = xr.open_dataset('data/uv_ERA5_25122018_small.nc')
 
 # print metadata
 

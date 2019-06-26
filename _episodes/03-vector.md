@@ -28,7 +28,7 @@ here we wish to cutomize this plot, so we will first learn how to add markers in
 
 ## View a map of all Carpentries instructors
 
-- using https://raw.githubusercontent.com/carpentries/carpentries.org/gh-pages/files/geojson/all_instructors_by_airport.geojson
+- using [https://raw.githubusercontent.com/carpentries/carpentries.org/gh-pages/files/geojson/all_instructors_by_airport.geojson](https://raw.githubusercontent.com/carpentries/carpentries.org/gh-pages/files/geojson/all_instructors_by_airport.geojson)
 
 
 Let's first create a map, centred on Manchester (UK).
@@ -47,20 +47,20 @@ map = Map(center=center, interpolation='nearest', basemap=basemaps.Stamen.Terrai
 ~~~
 {: .language-python}
 
-## Download `geojson` file from Carpentries website
-
-
-~~~
-import urllib.request
-
-url = 'https://raw.githubusercontent.com/carpentries/carpentries.org/gh-pages/files/geojson/all_instructors_by_airport.geojson'
-
-# Download the file from `url` and save it locally under `data/all_instructors_by_airport.json`:
-urllib.request.urlretrieve(url, 'all_instructors_by_airport.geojson')
-
-~~~
-{: .language-python}
-
+> ## Get `geojson` file from Carpentries website
+>
+> ~~~
+> import urllib.request
+>
+> url = 'https://raw.githubusercontent.com/carpentries/carpentries.org/gh-pages/files/geojson/all_instructors_by_airport.geojson'
+> 
+> # Download the file from `url` and save it locally under `data/all_instructors_by_airport.json`:
+> urllib.request.urlretrieve(url, 'data/all_instructors_by_airport.geojson')
+>
+> ~~~
+> {: .language-python}
+>
+{: .callout}
 
 ## Read GeoJson file
 
@@ -72,7 +72,7 @@ It can be installed from Anaconda conda-forge channel.
 ~~~
 import json
 # Open GeoJson file and load data
-with open('all_instructors_by_airport.geojson') as f:
+with open('data/all_instructors_by_airport.geojson') as f:
     geojson = json.load(f)
 ~~~
 {: .language-python}
