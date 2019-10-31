@@ -41,7 +41,7 @@ map
 {: .language-python}
 
 
-<iframe width="800" height="400" src="../files/simple_map_NASAGIBS.ModisTerraTrueColorCR_20190623.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="400" src="{% link files/simple_map_NASAGIBS.ModisTerraTrueColorCR_20190623.html %}" frameborder="0" allowfullscreen></iframe>
 
 As you can see the new layer is on top of the original map, thus hiding the original basemap.
 
@@ -67,7 +67,7 @@ map.add_control(LayersControl())
 ~~~
 {: .language-python}
 
-<iframe width="800" height="400" src="../files/simple_map_NASAGIBS.ModisTerraTrueColorCR_20190623_control.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="400" src="{% link files/simple_map_NASAGIBS.ModisTerraTrueColorCR_20190623_control.html %}" frameborder="0" allowfullscreen></iframe>
 
 On the top right of our map, we now have the possibility to add/remove our layers.
 
@@ -223,7 +223,7 @@ map
 ~~~
 {: .language-python}
 
-<iframe width="800" height="400" src="../files/uv_ERA5_25122018_small.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="400" src="{% link files/uv_ERA5_25122018_small.html %}" frameborder="0" allowfullscreen></iframe>
 
 
 # Save to HTML
