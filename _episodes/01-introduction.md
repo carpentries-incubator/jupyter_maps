@@ -99,7 +99,7 @@ Map()
 ~~~
 {: .language-python}
 
-<iframe width="800" height="400" src="../files/simple_map.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="400" src="{% link files/simple_map.html %}" frameborder="0" allowfullscreen></iframe>
 
 > ## What do you get?
 >
@@ -148,7 +148,7 @@ Map(center = (60, -2.2), zoom = 2, min_zoom = 1, max_zoom = 20,
 ~~~
 {: .language-python}
 
-<iframe width="800" height="400" src="../files/simple_map_Stamen.Terrain.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="400" src="{% link files/simple_map_Stamen.Terrain.html %}" frameborder="0" allowfullscreen></iframe>
 
 - center: Initial geographic center of the map (default value is (0,0)). A tuple needs to be given with the first
 element the latitude in degrees (from -90.0 to 90.0) and the second element is the longitude (from -180 to 180).
@@ -175,13 +175,13 @@ A preview of most of them can be found [here](https://leaflet-extras.github.io/l
 > > {: .language-python}
 > > 
 > > - `Esri.WorldImagery`
-> > <iframe width="800" height="400" src="../files/simple_map_OpenTopoMap.html" frameborder="0" allowfullscreen></iframe>
+> > <iframe width="800" height="400" src="{% link files/simple_map_OpenTopoMap.html %}" frameborder="0" allowfullscreen></iframe>
 > > ~~~
 > > Map(center = (53.48, -2.24), zoom = 2, min_zoom = 1, max_zoom = 20, 
 > >    basemap=basemaps.Esri.WorldImagery)
 > > ~~~
 > > {: .language-python}
-> > <iframe width="800" height="400" src="../files/simple_map_Esri.WorldImagery.html" frameborder="0" allowfullscreen></iframe>
+> > <iframe width="800" height="400" src="{% link files/simple_map_Esri.WorldImagery.html %}" frameborder="0" allowfullscreen></iframe>
 > {: .solution}
 >
 {: .challenge}

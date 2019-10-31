@@ -638,7 +638,7 @@ embed_minimal_html('carpentries_instructors_basic.html', views=[map], title='The
 ~~~
 {: .language-python}
 
-<iframe width="800" height="400" src="../files/carpentries_instructors_basic.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="400" src="{% link files/carpentries_instructors_basic.html %}" frameborder="0" allowfullscreen></iframe>
 
 The map is not exactly similar to what is shown in Github yet. 
 
@@ -669,7 +669,7 @@ for i in range(len(features)):
 ~~~
 {: .language-python}
 
-<iframe width="800" height="400" src="../files/carpentries_instructors.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="400" src="{% link files/carpentries_instructors.html %}" frameborder="0" allowfullscreen></iframe>
 
 
 ## Customize markers
@@ -711,7 +711,7 @@ for i in range(len(features)):
 ~~~
 {: .language-python}
 
-<iframe width="800" height="400" src="../files/carpentries_instructors_with_logo.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="400" src="{% link files/carpentries_instructors_with_logo.html %}" frameborder="0" allowfullscreen></iframe>
 
 ## Marker cluster
 
@@ -758,7 +758,7 @@ map.add_control(LayersControl())
 {: .language-python}
 
 
-<iframe width="800" height="400" src="../files/carpentries_instructors_with_marker_cluster.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="400" src="{% link files/carpentries_instructors_with_marker_cluster.html %}" frameborder="0" allowfullscreen></iframe>
 
 
 ## Circle marker 
@@ -1268,7 +1268,7 @@ map.add_control(widget_control)
 map
 ~~~
 
-<iframe width="800" height="400" src="../files/temperature_per_country_no_zoom.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="400" src="{% link files/temperature_per_country_no_zoom.html %}" frameborder="0" allowfullscreen></iframe>
 
 
 ## Add widget for zoom
@@ -1303,7 +1303,7 @@ map
 ~~~
 {: .language-python}
 
-<iframe width="800" height="400" src="../files/temperature_per_country.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="400" src="{% link files/temperature_per_country.html %}" frameborder="0" allowfullscreen></iframe>
 
 
 ## Save the resulting map
